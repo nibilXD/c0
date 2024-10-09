@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNGSHS Karamuck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.7;
+        }
+        header {
+            background: linear-gradient(135deg, #2C3E50, #34495E);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        header h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            border: 2px solid white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1500x500');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .hero h2 {
+            font-size: 36px;
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 18px;
+            font-weight: 300;
+            margin-top: 20px;
+        }
+        .section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .card h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 32px;
+            color: #2C3E50;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .card p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .services, .events {
+            padding: 50px 0;
+            background-color: #f0f0f0;
+        }
+        .services h2, .events h2 {
+            text-align: center;
+            font-size: 32px;
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        .service-card, .event-card {
+            background-color: white;
+            padding: 25px;
+            margin: 0 auto 30px;
+            width: 90%;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover, .event-card:hover {
+            transform: translateY(-10px);
+        }
+        .service-card h3, .event-card h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: #34495E;
+        }
+        .service-card p, .event-card p {
+            font-size: 16px;
+            color: #555;
+        }
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+        }
+        footer p {
+            font-size: 14px;
+        }
+        
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 15px;
+            }
+            header h1 {
+                font-size: 30px;
+            }
+            header p {
+                font-size: 16px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+            .hero {
+                padding: 70px 15px;
+            }
+            .hero h2 {
+                font-size: 28px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .section {
+                padding: 10px;
+            }
+            .card {
+                padding: 20px;
+            }
+            .card h2 {
+                font-size: 26px;
+            }
+            .card p {
+                font-size: 14px;
+            }
+            .services h2, .events h2 {
+                font-size: 26px;
+            }
+            .service-card, .event-card {
+                width: 100%;
+            }
+        }
+
+        /* Very Small Screens */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 24px;
+            }
+            nav ul li a {
+                font-size: 16px;
+            }
+            .hero h2 {
+                font-size: 24px;
+            }
+            .hero p {
+                font-size: 14px;
+            }
+            .card h2 {
+                font-size: 22px;
+            }
+            .card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SNGSHS Karamuck</h1>
+        <p>Where knowledge and leadership are nurtured with care.</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home" class="hero">
+        <h2>Empowering Future Leaders</h2>
+        <p>Join us in our mission to provide high-quality education and holistic development.</p>
+    </div>
+
+    <div id="about" class="section">
+        <div class="card">
+            <h2>About Us</h2>
+            <p>SNGSHS Karamuck was established in 1920 and is managed by the Pvt. Aided. Located in the rural area of Anthikkad block of Thrissur district, Kerala, it offers education from Grades 1 to 10. Our mission is to provide quality education that helps students develop academically, socially, and emotionally. We have modern facilities like high-tech classrooms, highly skilled teachers, a playground, a library with 2000 books, 51 functional computers, and a mid-day meal program. We offer both English and Malayalam medium education.</p>
+        </div>
+    </div>
+
+    <div id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Quality Education</h3>
+            <p>We offer an extensive curriculum to ensure students develop in all aspects of life, from academics to extra-curricular activities.</p>
+        </div>
+        <div class="service-card">
+            <h3>Hi-Tech Classrooms</h3>
+            <p>Our classrooms are equipped with modern technologies to aid in interactive and effective learning.</p>
+        </div>
+        <div class="service-card">
+            <h3>Highly Skilled Teachers</h3>
+            <p>Our experienced and well-trained teachers ensure personalized attention to each student's growth.</p>
+        </div>
+    </div>
+
+    <div id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-card">
+
+        <div class="event-card">
+            <h3>Science Exhibition</h3>
+            <p>Our students will showcase their scientific talents and innovative projects at the annual science exhibition. Date: 22nd December.</p>
+        </div>
+        <div class="event-card">
+            <h3>Cultural Fest</h3>
+            <p>A celebration of our rich cultural heritage with performances in dance, music, and drama. Date: 5th January.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact us: 0487 2630651 | sngshighschoolkaramuck@gmail.com</p>
+        <p>&copy; 2024 SNGSHS Karamuck. All rights reserved.</p>
+    </footer>
+</body>
+</html>
